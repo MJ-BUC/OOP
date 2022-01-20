@@ -24,12 +24,18 @@ int main() {
     cout << "\tThe tab escape sequence (\\t) indents text"<< endl;
     cout << "\t\tMultiple tab sequences (\\t\\t) can be used together\n"<< endl;
 
-    cout << "The integer variable is " + to_string(num)<< endl;
-    cout << "The double one_one is " + to_string(decimal)<< endl;
-    cout << "The char a is " + to_string(character)<< endl;
-    cout << "The boolean tf is " + to_string(boolean)<< endl;
-    cout << ""<< endl;
-    cout << ""<< endl;
-    cout << ""<< endl;
+    cout << "\tThe integer variable is " + to_string(num)<< endl;
+    cout << "\tThe double one_one is " + to_string(decimal)<< endl;
+    cout << "\tThe char a is " + to_string(character)<< endl;
+    cout << "\tThe boolean tf is " + to_string(boolean) + "\n"<< endl;
+
+    cout << "Please update the value of the variable 'one' to 2: "<< endl;
+    cin >> num;
+    cout << "\tThe updated value of one is: " + to_string(num) + "\n"<< endl;
+
+    cout << "Please update the value of the variable 'a' to b: "<< endl;
+    cin >> character;
+    cout << "\tThe updated value of a is: " + to_string(character) + "\n"<< endl;
+
     return 0;
 }
