@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
-project(lab1)
+project(lab2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(lab1 bucaro_mark_lab1.cpp)
+add_executable(lab2 bucaro_mark_lab2.cpp)
