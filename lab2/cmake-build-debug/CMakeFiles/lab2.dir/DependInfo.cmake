@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab2/bucaro_mark_lab2.cpp" "CMakeFiles/lab2.dir/bucaro_mark_lab2.cpp.obj" "gcc" "CMakeFiles/lab2.dir/bucaro_mark_lab2.cpp.obj.d"
+  "C:/Users/lunke/OneDrive/Documents/GitHub/CSCE306/lab2/bucaro_mark_lab2.cpp" "CMakeFiles/lab2.dir/bucaro_mark_lab2.cpp.obj" "gcc" "CMakeFiles/lab2.dir/bucaro_mark_lab2.cpp.obj.d"
   )
 
 # Targets to which this target links.
