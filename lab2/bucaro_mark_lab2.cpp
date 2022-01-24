@@ -6,6 +6,7 @@
 using namespace std;
 
 // Code Summary: This source code file demonstrates variables declaration, different data types and formatted printing in a single page CPP application.
+
 int num = 1;
 double decimal = 1.1;
 char character = 'a';
