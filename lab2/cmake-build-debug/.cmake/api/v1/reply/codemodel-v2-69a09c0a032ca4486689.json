@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab2/cmake-build-debug",
-		"source" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab2"
+		"build" : "C:/Users/lunke/OneDrive/Documents/GitHub/CSCE306/lab2/cmake-build-debug",
+		"source" : "C:/Users/lunke/OneDrive/Documents/GitHub/CSCE306/lab2"
 	},
 	"version" : 
 	{
