@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
-project(lsb4)
+project(lab4)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(lsb4 bucaro_mark_lab4.cpp)
+add_executable(lab4 bucaro_mark_lab4.cpp)
