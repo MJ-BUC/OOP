@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: lsb4
+# Project: lab4
 # Configurations: Debug
 # =============================================================================
 
@@ -39,57 +39,57 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/lunke/OneDrive/Documents/Github/CSCE306/lsb4/cmake-build-debug/
-# =============================================================================
-# Object build statements for EXECUTABLE target lsb4
-
-
-#############################################
-# Order-only phony target for lsb4
-
-build cmake_object_order_depends_target_lsb4: phony || CMakeFiles/lsb4.dir
-
-build CMakeFiles/lsb4.dir/bucaro_mark_lab4.cpp.obj: CXX_COMPILER__lsb4_Debug C$:/Users/lunke/OneDrive/Documents/Github/CSCE306/lsb4/bucaro_mark_lab4.cpp || cmake_object_order_depends_target_lsb4
-  DEP_FILE = CMakeFiles\lsb4.dir\bucaro_mark_lab4.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\lsb4.dir
-  OBJECT_FILE_DIR = CMakeFiles\lsb4.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target lsb4
-
-
-#############################################
-# Link the executable lsb4.exe
-
-build lsb4.exe: CXX_EXECUTABLE_LINKER__lsb4_Debug CMakeFiles/lsb4.dir/bucaro_mark_lab4.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\lsb4.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = lsb4.exe
-  TARGET_IMPLIB = liblsb4.dll.a
-  TARGET_PDB = lsb4.exe.dbg
-
+cmake_ninja_workdir = C$:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab4/cmake-build-debug/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\lunke\OneDrive\Documents\Github\CSCE306\lsb4\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\lunke\OneDrive\Documents\Github\CSCE306\lab4\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab4
+
+
+#############################################
+# Order-only phony target for lab4
+
+build cmake_object_order_depends_target_lab4: phony || CMakeFiles/lab4.dir
+
+build CMakeFiles/lab4.dir/bucaro_mark_lab4.cpp.obj: CXX_COMPILER__lab4_Debug C$:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab4/bucaro_mark_lab4.cpp || cmake_object_order_depends_target_lab4
+  DEP_FILE = CMakeFiles\lab4.dir\bucaro_mark_lab4.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\lab4.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab4
+
+
+#############################################
+# Link the executable lab4.exe
+
+build lab4.exe: CXX_EXECUTABLE_LINKER__lab4_Debug CMakeFiles/lab4.dir/bucaro_mark_lab4.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab4.exe
+  TARGET_IMPLIB = liblab4.dll.a
+  TARGET_PDB = lab4.exe.dbg
 
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\lunke\OneDrive\Documents\Github\CSCE306\lsb4\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\lunke\OneDrive\Documents\Github\CSCE306\lsb4 -BC:\Users\lunke\OneDrive\Documents\Github\CSCE306\lsb4\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\lunke\OneDrive\Documents\Github\CSCE306\lab4\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\lunke\OneDrive\Documents\Github\CSCE306\lab4 -BC:\Users\lunke\OneDrive\Documents\Github\CSCE306\lab4\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -99,7 +99,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build lsb4: phony lsb4.exe
+build lab4: phony lab4.exe
 
 # =============================================================================
 # Folder targets.
@@ -107,9 +107,9 @@ build lsb4: phony lsb4.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lsb4/cmake-build-debug
+# Folder: C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab4/cmake-build-debug
 
-build all: phony lsb4.exe
+build all: phony lab4.exe
 
 # =============================================================================
 # Built-in targets

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lsb4.exe"
+			"path" : "lab4.exe"
 		},
 		{
-			"path" : "lsb4.pdb"
+			"path" : "lab4.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "lsb4::@6890427a1f51a3e7e1df",
+	"id" : "lab4::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "lsb4",
-	"nameOnDisk" : "lsb4.exe",
+	"name" : "lab4",
+	"nameOnDisk" : "lab4.exe",
 	"paths" : 
 	{
 		"build" : ".",

@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "lsb4",
+					"name" : "lab4",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "lsb4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lsb4-Debug-4c79aa73dbe916ecedd6.json",
-					"name" : "lsb4",
+					"id" : "lab4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab4-Debug-19ee3766788ea442e8b8.json",
+					"name" : "lab4",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lsb4/cmake-build-debug",
-		"source" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lsb4"
+		"build" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab4/cmake-build-debug",
+		"source" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab4"
 	},
 	"version" : 
 	{

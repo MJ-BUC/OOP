@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/lunke/OneDrive/Documents/Github/CSCE306/lsb4/cmake-build-debug"
+			"value" : "c:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab4/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lsb4"
+			"value" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab4"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -635,7 +635,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/lsb4"
+			"value" : "C:/Program Files (x86)/lab4"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -663,7 +663,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/ninja.exe"
+			"value" : "C:/Program Files/JetBrains/CLion 2021.3.2/bin/ninja/win/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -851,7 +851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "lsb4"
+			"value" : "lab4"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1230,7 +1230,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "lsb4_BINARY_DIR",
+			"name" : "lab4_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1239,10 +1239,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lsb4/cmake-build-debug"
+			"value" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab4/cmake-build-debug"
 		},
 		{
-			"name" : "lsb4_IS_TOP_LEVEL",
+			"name" : "lab4_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1254,7 +1254,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "lsb4_SOURCE_DIR",
+			"name" : "lab4_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lsb4"
+			"value" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab4"
 		}
 	],
 	"kind" : "cache",

@@ -6,12 +6,14 @@
 #include <iostream>
 using namespace std;
 
+// print each index of an array that is passed to the function along with the size.
 void print_array(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         cout << "\t\tArray_data[" << i << "] value is " << arr[i] << endl;
     }
 }
 
+// adds the values of every index and is divided by the size of the array to find ad return the average.
 double return_average(int arr[], int size) {
     double average;
     int sum = 0;
@@ -26,6 +28,8 @@ double return_average(int arr[], int size) {
     return average;
 }
 
+// loops the array in reverse and inserting them into a new array in reverse order.
+// print_array function called with the new array passed to it, printing the array in reversed order.
 void reverse_and_print(int arr[], int size) {
     int index = 0;
     int newarray[size];
@@ -45,6 +49,7 @@ int main() {
     cout << "Hello, Welcome to Lab 4!\n" << endl;
     cout << "\tThis prints the data from the array using a for loop."<< endl;
 
+    // populates the array with its correct values 0 - 10.
     while (counter != limit) {
         array[counter] = counter;
         counter++;
