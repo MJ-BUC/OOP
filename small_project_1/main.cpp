@@ -22,25 +22,49 @@ int divide(int num1, int num2) {
     return num1 / num2;
 }
 
+double average(int sum, int count) {
+    double avg = sum / count;
+    return avg;
+}
+
 
 int main() {
-    std::string opChoice;
+    string opChoice;
     int num1;
     int num2;
     int sum;
+    int count = 0;
+    string choice;
 
     cout << "Choose an operation +, -, *, /, A: " << endl;
     cin >> opChoice;
-    while (!(opChoice == "+" || opChoice == "-" || opChoice == "*" || opChoice == "/" || opChoice == "^")) {
+    while (!(opChoice == "+" || opChoice == "-" || opChoice == "*" || opChoice == "/" || opChoice == "A")) {
         cout << "Choose an operation +, -, *, /: " << endl;
         cin >> opChoice;
     }
-    cout << "Enter the first number: " << endl;
-    cin >> num1;
-    cout << "Enter the second number: " << endl;
-    cin >> num2;
 
-    if (num2 == 0) {
+    if (opChoice == "A") {
+        do {
+            cout << "Enter number: " << endl;
+            cin >> num1;
+            sum += num1;
+            cout << "Do you want to enter another number to average? [y/n]: " << endl;
+            cin >> choice;
+            count++;
+        } while (choice == "y" || choice == "Y");
+    }
+    else {
+        cout << "Enter the first number: " << endl;
+        cin >> num1;
+        cout << "Enter the second number: " << endl;
+        cin >> num2;
+    }
+
+    if (opChoice == "A") {
+        double avg = average(sum, count);
+        cout << "The average of numbers entered is " << avg << endl;
+    }
+    else if (num2 == 0) {
         cout << "Cannot divide by zero!" << endl;
     }
     else if (!(typeid(num1) == typeid(int) || typeid(num2) == typeid(int))){
