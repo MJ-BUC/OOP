@@ -36,58 +36,73 @@ int main() {
     int count = 0;
     string choice;
 
-    cout << "Choose an operation +, -, *, /, A: " << endl;
+    cout << "Welcome to small project 1!" << endl << endl;
+    cout << "\t1: Addition" << endl;
+    cout << "\t2: Subtraction" << endl;
+    cout << "\t3: Multiplication" << endl;
+    cout << "\t4: Division" << endl;
+    cout << "\t5: Average" << endl;
+    cout << "\tChoose an operation..." << endl;
     cin >> opChoice;
-    while (!(opChoice == "+" || opChoice == "-" || opChoice == "*" || opChoice == "/" || opChoice == "A")) {
-        cout << "Choose an operation +, -, *, /: " << endl;
+
+    while (!(opChoice == "1" || opChoice == "2" || opChoice == "3" || opChoice == "4" || opChoice == "5")) {
+        cout << "\t1: Addition" << endl;
+        cout << "\t2: Subtraction" << endl;
+        cout << "\t3: Multiplication" << endl;
+        cout << "\t4: Division" << endl;
+        cout << "\t5: Average" << endl;
+        cout << "\tChoose an operation..." << endl;
         cin >> opChoice;
     }
 
-    if (opChoice == "A") {
+    if (opChoice == "5") {
         do {
-            cout << "Enter number: " << endl;
+            cout << "\tEnter number: " << endl;
             cin >> num1;
             sum += num1;
-            cout << "Do you want to enter another number to average? [y/n]: " << endl;
+            cout << "\tDo you want to enter another number to average? [y/n]: " << endl;
             cin >> choice;
             count++;
         } while (choice == "y" || choice == "Y");
     }
     else {
-        cout << "Enter the first number: " << endl;
+        cout << "\tEnter the first number: " << endl;
         cin >> num1;
-        cout << "Enter the second number: " << endl;
+        cout << "\tEnter the second number: " << endl;
         cin >> num2;
     }
 
-    if (opChoice == "A") {
+    if (opChoice == "5") {
         double avg = average(sum, count);
-        cout << "The average of numbers entered is " << avg << endl;
+        cout << "\tThe average of numbers entered is " << avg << endl << endl;
     }
     else if (num2 == 0) {
-        cout << "Cannot divide by zero!" << endl;
+        cout << "\tCannot divide by zero!" << endl << endl;
     }
     else if (!(typeid(num1) == typeid(int) || typeid(num2) == typeid(int))){
-        cout << "An integer was not entered correctly! Please enter an integer." << endl;
+        cout << "\tAn integer was not entered correctly! Please enter an integer." << endl << endl;
     }
-    else if (opChoice == "+") {
+    else if (opChoice == "1") {
         sum = add(num1, num2);
-        cout << num1 <<  " " << opChoice << " " << num2 <<  " = " << sum << endl;
+        cout << "\t" << num1 <<  " + " << num2 <<  " = " << sum << endl << endl;
     }
-    else if (opChoice == "-") {
+    else if (opChoice == "2") {
         sum = subtract(num1, num2);
-        cout << num1 <<  " " << opChoice << " " << num2 <<  " = " << sum << endl;
+        cout << "\t" << num1 <<  " - " << num2 <<  " = " << sum << endl << endl;
     }
-    else if (opChoice == "*") {
+    else if (opChoice == "3") {
         sum = multiply(num1, num2);
-        cout << num1 <<  " " << opChoice << " " << num2 <<  " = " << sum << endl;
+        cout << "\t" << num1 <<  " * " << num2 <<  " = " << sum << endl << endl;
     }
-    else if (opChoice == "/") {
+    else if (opChoice == "4") {
         sum = divide(num1, num2);
-        cout << num1 <<  " " << opChoice << " " << num2 <<  " = " << sum << endl;
+        cout << "\t" << num1 <<  " / " << num2 <<  " = " << sum << endl << endl;
     }
     else {
-        cout << "Invalid operation entered!" << endl;
+        cout << "\tInvalid operation entered!" << endl << endl;
     }
+
+    cout << "Thank you." << endl;
+
     return 0;
 }
