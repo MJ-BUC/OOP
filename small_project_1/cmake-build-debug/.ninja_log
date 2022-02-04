@@ -1,0 +1,7 @@
+# ninja log v5
+0	205	6656891828714055	CMakeFiles/small_project_1.dir/main.cpp.obj	62963f693a0e86f9
+206	272	6656891829353291	small_project_1.exe	847e2074d530a1b5
+3	418	6656979438814187	CMakeFiles/small_project_1.dir/main.cpp.obj	62963f693a0e86f9
+418	595	6656979440377079	small_project_1.exe	847e2074d530a1b5
+2	371	6656979713563128	CMakeFiles/small_project_1.dir/main.cpp.obj	62963f693a0e86f9
+372	476	6656979714500788	small_project_1.exe	847e2074d530a1b5
