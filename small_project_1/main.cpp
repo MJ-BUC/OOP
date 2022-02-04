@@ -1,6 +1,6 @@
 // Mark Bucaro
 // CSCE 306 : Spring 2022
-// Small Project 1 - bucaro_mark_sp1.cpp
+// Small_Project_1 - bucaro_mark_sp1.cpp
 // Code Summary: This is a calculator that can do addition, subtraction, multiplication, division, and find the average.
 
 #include <iostream>
@@ -48,19 +48,19 @@ int main() {
     }
     else if (opChoice == "+") {
         sum = add(num1, num2);
-        cout << to_string(num1) + " " + opChoice + " " + to_string(num2) + " = " + to_string(sum) << endl;
+        cout << num1 <<  " " << opChoice << " " << num2 <<  " = " << sum << endl;
     }
     else if (opChoice == "-") {
         sum = subtract(num1, num2);
-        cout << to_string(num1) + " " + opChoice + " " + to_string(num2) + " = " + to_string(sum) << endl;
+        cout << num1 <<  " " << opChoice << " " << num2 <<  " = " << sum << endl;
     }
     else if (opChoice == "*") {
         sum = multiply(num1, num2);
-        cout << to_string(num1) + " " + opChoice + " " + to_string(num2) + " = " + to_string(sum) << endl;
+        cout << num1 <<  " " << opChoice << " " << num2 <<  " = " << sum << endl;
     }
     else if (opChoice == "/") {
         sum = divide(num1, num2);
-        cout << to_string(num1) + " " + opChoice + " " + to_string(num2) + " = " + to_string(sum) << endl;
+        cout << num1 <<  " " << opChoice << " " << num2 <<  " = " << sum << endl;
     }
     else {
         cout << "Invalid operation entered!" << endl;
