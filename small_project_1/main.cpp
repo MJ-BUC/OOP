@@ -6,26 +6,33 @@
 #include <iostream>
 using namespace std;
 
+// int returning function that adds two numbers
 int add(int num1, int num2) {
     return num1 + num2;
 }
 
+// int returning function that subtracts two numbers
 int subtract(int num1, int num2) {
     return num1 - num2;
 }
 
+// int returning function that multiplies two numbers
 int multiply(int num1, int num2) {
     return num1 * num2;
 }
 
+// int returning function that divides two numbers
 int divide(int num1, int num2) {
     return num1 / num2;
 }
 
+// double returning function that takes the average of input numbers
 double average(int sum, int count) {
     double avg = sum / count;
     return avg;
 }
+
+// all numbers entered for num1 and num2 need to be int does not take floating point or strings
 
 
 int main() {
@@ -36,6 +43,7 @@ int main() {
     int count = 0;
     string choice;
 
+    // Operations to choose from
     cout << "Welcome to small project 1!" << endl << endl;
     cout << "\t1: Addition" << endl;
     cout << "\t2: Subtraction" << endl;
@@ -45,6 +53,7 @@ int main() {
     cout << "\tChoose an operation..." << endl;
     cin >> opChoice;
 
+    // enter your choice for the operation if what you entered is not available, it will prompt to enter again
     while (!(opChoice == "1" || opChoice == "2" || opChoice == "3" || opChoice == "4" || opChoice == "5")) {
         cout << "\t1: Addition" << endl;
         cout << "\t2: Subtraction" << endl;
@@ -55,6 +64,7 @@ int main() {
         cin >> opChoice;
     }
 
+    // if choice entered is 5 you can enter more than 2 numbers that will all be summed
     if (opChoice == "5") {
         do {
             cout << "\tEnter number: " << endl;
@@ -65,6 +75,7 @@ int main() {
             count++;
         } while (choice == "y" || choice == "Y");
     }
+    //  if the choice entered is not 5 the else is triggered
     else {
         cout << "\tEnter the first number: " << endl;
         cin >> num1;
@@ -72,15 +83,14 @@ int main() {
         cin >> num2;
     }
 
+    // if and if else that calls the corresponding function based on te option choice entered
     if (opChoice == "5") {
         double avg = average(sum, count);
         cout << "\tThe average of numbers entered is " << avg << endl << endl;
     }
-    else if (num2 == 0) {
+    // error handling for someone who divides by zero
+    else if (num2 == 0 && opChoice == "4") {
         cout << "\tCannot divide by zero!" << endl << endl;
-    }
-    else if (!(typeid(num1) == typeid(int) || typeid(num2) == typeid(int))){
-        cout << "\tAn integer was not entered correctly! Please enter an integer." << endl << endl;
     }
     else if (opChoice == "1") {
         sum = add(num1, num2);
@@ -98,6 +108,7 @@ int main() {
         sum = divide(num1, num2);
         cout << "\t" << num1 <<  " / " << num2 <<  " = " << sum << endl << endl;
     }
+    // error handling when an incorrect operation is selected
     else {
         cout << "\tInvalid operation entered!" << endl << endl;
     }
