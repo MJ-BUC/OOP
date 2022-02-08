@@ -29,17 +29,17 @@ public:
     }
 
     void to_string() {
-        cout << "Fruit name: " << get_fruit_name() << endl;
-        cout << "\t" << get_portion_label() << endl;
-        cout << "\t" << get_portion_quantity() << "  " << get_portion_unit() << endl;
-        cout << "\t" << get_energy_label() << endl;
-        cout << "\t" << get_energy_quantity() << "  " <<  get_energy_unit() <<  endl;
-        cout << "\t" << get_protein_label() << endl;
-        cout << "\t" << get_protein_quantity() << "  " <<  get_protein_unit() <<  endl;
-        cout << "\t" << get_lipids_label() << endl;
-        cout << "\t" << get_lipids_quantity() << "  " <<  get_lipids_unit() <<  endl;
-        cout << "\t" << get_carbs_label() << endl;
-        cout << "\t" << get_carbs_quantity() << "  " <<  get_carbs_unit() <<  endl << endl;
+        cout << "\tFruit name: " << get_fruit_name() << endl;
+        cout << "\t\t" << get_portion_label() << endl;
+        cout << "\t\t" << get_portion_quantity() << "  " << get_portion_unit() << endl;
+        cout << "\t\t" << get_energy_label() << endl;
+        cout << "\t\t" << get_energy_quantity() << "  " <<  get_energy_unit() <<  endl;
+        cout << "\t\t" << get_protein_label() << endl;
+        cout << "\t\t" << get_protein_quantity() << "  " <<  get_protein_unit() <<  endl;
+        cout << "\t\t" << get_lipids_label() << endl;
+        cout << "\t\t" << get_lipids_quantity() << "  " <<  get_lipids_unit() <<  endl;
+        cout << "\t\t" << get_carbs_label() << endl;
+        cout << "\t\t" << get_carbs_quantity() << "  " <<  get_carbs_unit() <<  endl << endl;
     }
 
     // portions
