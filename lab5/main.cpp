@@ -13,9 +13,9 @@ using namespace std;
 
 int main() {
 
-    Fruit apple = Fruit("Apple");
-    Fruit banana = Fruit("Banana");
-    Fruit kiwi = Fruit("Kiwi");
+    Fruit apple = Fruit("Apple", 100, 150, 50.0, 60.0, 750.00);
+    Fruit banana = Fruit("Banana", 2, 85, 120.0, 12.0, 80.00);
+    Fruit kiwi = Fruit("Kiwi", 70, 300, 30.0, 20.0, 40.00);
     apple.to_string();
     banana.to_string();
     kiwi.to_string();
