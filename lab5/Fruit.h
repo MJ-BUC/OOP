@@ -20,6 +20,7 @@ public:
         set_carbs_quantity(carbs);
     }
 
+    // ========== fruit name ==========
     void set_fruit_name(std::string new_name) {
         fruit_name = new_name;
     }
@@ -27,7 +28,9 @@ public:
     std::string get_fruit_name() {
         return fruit_name;
     }
+    // ========== fruit name ==========
 
+    // calls the needed get methods to print out everything about a fruit
     void to_string() {
         cout << "\tFruit name: " << get_fruit_name() << endl;
         cout << "\t\t" << get_portion_label() << endl;
@@ -42,7 +45,7 @@ public:
         cout << "\t\t" << get_carbs_quantity() << "  " <<  get_carbs_unit() <<  endl << endl;
     }
 
-    // portions
+    // ========== portions ==========
     std::string get_portion_label() {
         return portion_label;
     }
@@ -58,8 +61,10 @@ public:
     std::string get_portion_unit() {
         return portion_unit;
     }
+    // ========== portions ==========
 
-    // energy
+
+    // ========== energy ==========
     std::string get_energy_label() {
         return energy_label;
     }
@@ -75,8 +80,10 @@ public:
     std::string get_energy_unit() {
         return energy_unit;
     }
+    // ========== energy ==========
 
-    // protein
+
+    // ========== protein ==========
     std::string get_protein_label() {
         return protein_label;
     }
@@ -92,8 +99,10 @@ public:
     std::string get_protein_unit() {
         return protein_unit;
     }
+    // ========== protein ==========
 
-    // lipids
+
+    // ========== lipids ==========
     std::string get_lipids_label() {
         return lipids_label;
     }
@@ -109,8 +118,10 @@ public:
     std::string get_lipids_unit() {
         return lipids_unit;
     }
+    // ========== lipids ==========
 
-    // carbs
+
+    // ========== carbs ==========
     std::string get_carbs_label() {
         return carbs_label;
     }
@@ -126,6 +137,7 @@ public:
     std::string get_carbs_unit() {
         return carbs_unit;
     }
+    // ========== carbs ==========
 
 private:
     string fruit_name;
