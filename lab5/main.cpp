@@ -14,9 +14,9 @@ using namespace std;
 int main() {
     cout << "Welcome to lab 5!" << endl << endl;
 
-    Fruit apple = Fruit("Apple", 100, 150, 50.0, 60.0, 750.00);
-    Fruit banana = Fruit("Banana", 2, 85, 120.0, 12.0, 80.00);
-    Fruit kiwi = Fruit("Kiwi", 70, 300, 30.0, 20.0, 40.00);
+    Fruit apple = Fruit("Apple", 100, 62, 0.19, 0.21, 14.8);
+    Fruit banana = Fruit("Banana", 100, 85, 0.73, 0.22, 20.1);
+    Fruit kiwi = Fruit("Kiwi", 100, 58, 1.06, 0.44, 14.00);
     apple.to_string();
     banana.to_string();
     kiwi.to_string();
