@@ -60,22 +60,22 @@ int main() {
 
 
     // printing for my_integer
-    cout << "\t --Data for reference variable my_integer--" << endl;
+    cout << "\t --Data for reference variable my_int_ref--" << endl;
     cout << "\t\t Variable Value: " << my_int_ref << endl;
     cout << "\t\t Memory reference location: " << &my_int_ref << endl << endl;
 
     // printing for my_double
-    cout << "\t --Data for reference variable my_double--" << endl;
+    cout << "\t --Data for reference variable my_dbl_ref--" << endl;
     cout << "\t\t Variable Value: " << my_dbl_ref << endl;
     cout << "\t\t Memory reference location: " << &my_dbl_ref << endl << endl;
 
     // printing for ten_ten
-    cout << "\t --Data for reference variable ten_ten--" << endl;
+    cout << "\t --Data for reference variable my_str_ref--" << endl;
     cout << "\t\t Variable Value: " << my_str_ref << endl;
     cout << "\t\t Memory reference location: " << &my_str_ref << endl << endl;
 
     // printing for int_array_five
-    cout << "\t --Data for reference variable int_array_fiver--" << endl;
+    cout << "\t --Data for reference variable my_array_ref--" << endl;
     cout << "\t\t Variable Value: ";
     for (int i = 0; i < 5; i++) {
         cout << my_array_ref[i] << ", ";
@@ -83,12 +83,53 @@ int main() {
     cout << "\n\t\t Memory reference location: " << &my_array_ref << endl << endl;
 
     // printing for std_int_array
-    cout << "\t --Data for reference variable std_int_array--" << endl;
+    cout << "\t --Data for reference variable std_array_ref--" << endl;
     cout << "\t\t Variable Value: ";
     for (int i = 0; i < std_array_ref.size(); i++) {
         cout << std_array_ref[i] << ", ";
     }
     cout << "\n\t\t Memory reference location: " << &std_array_ref << endl << endl;
+
+    cout << "====================================================================" << endl << endl;
+
+
+    int* my_int_ptr = &my_integer;
+    double *my_dbl_ptr = &my_double;
+    string * my_str_ptr = &ten_ten;
+    int* my_array_ptr = int_array_five;
+    int* std_array_ptr = std_int_array.data();
+
+
+    // printing for my_integer
+    cout << "\t --Data for de-reference variable my_int_ptr--" << endl;
+    cout << "\t\t Variable Value: " << my_int_ptr << endl;
+    cout << "\t\t de-referenced memory location: " << &my_int_ptr << endl << endl;
+
+    // printing for my_double
+    cout << "\t --Data for de-reference variable my_dbl_ptr--" << endl;
+    cout << "\t\t Variable Value: " << my_dbl_ptr << endl;
+    cout << "\t\t de-referenced memory location: " << &my_dbl_ptr << endl << endl;
+
+    // printing for ten_ten
+    cout << "\t --Data for de-reference variable my_str_ptr--" << endl;
+    cout << "\t\t Variable Value: " << my_str_ptr << endl;
+    cout << "\t\t de-referenced memory location: " << &my_str_ptr << endl << endl;
+
+    // printing for int_array_five
+    cout << "\t --Data for de-reference variable my_array_ptr--" << endl;
+    cout << "\t\t Variable Value: ";
+    for (int i = 0; i < 5; i++) {
+        cout << my_array_ptr[i] << ", ";
+    }
+    cout << "\n\t\t de-referenced memory location: " << &my_array_ptr << endl << endl;
+
+    // printing for std_int_array
+    cout << "\t --Data for de-reference variable std_array_ptr--" << endl;
+    cout << "\t\t Variable Value: ";
+    for (int i = 0; i < 5; i++) {
+        cout << std_array_ptr[i] << ", ";
+    }
+    cout << "\n\t\t de-referenced memory location: " << &std_array_ptr << endl << endl;
 
 
     cout << "Thank you." << endl;
