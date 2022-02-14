@@ -3,4 +3,4 @@ project(lab5)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(lab5 main.cpp Fruit.h)
+add_executable(lab5 bucaro_mark_lab5.cpp Fruit.h)

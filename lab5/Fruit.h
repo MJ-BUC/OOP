@@ -21,7 +21,7 @@ public:
         // sets the protein attribute
         set_protein_quantity(protein);
         // sets the lipids attribute
-        set_lipids_quantity(lipids);4
+        set_lipids_quantity(lipids);
         // sets the carbs attribute
         set_carbs_quantity(carbs);
     }
