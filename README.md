@@ -1,2 +1,2 @@
-# CSCE306
-Compilation of CSCE306 assignments and projects. This repository will be permanently private, unless authorized.
+# OOP
+Compilation of projects in the c++ programming language. This repository will demonstrate my use of OOP, c++, and the CLion IDE.
