@@ -1,8 +1,8 @@
 // Mark Bucaro
 // CSCE 306 : Spring 2022
-// Lab5 - bucaro_mark_lab5.cpp
-// Code Summary: This source code file demonstrates importing the Fruit Class and calling the to-string method...
-// ...which prints out a summary of the food type data.
+// Lab5 - bucaro_mark_lab6.cpp
+// Code Summary: This source code file demonstrates importing the Fruit class and performing a nutritional...
+// ...analysis of the data of instantiated food objects.
 
 #include "Fruit.h"
 #include <iostream>
