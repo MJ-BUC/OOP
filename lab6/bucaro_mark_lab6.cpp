@@ -18,10 +18,14 @@ int main() {
     Fruit apple = Fruit("Apple", 100, 62, 0.19, 0.21, 14.8);
     Fruit banana = Fruit("Banana", 100, 85, 0.73, 0.22, 20.1);
     Fruit kiwi = Fruit("Kiwi", 100, 58, 1.06, 0.44, 14.00);
+    Fruit orange = Fruit("Orange", 100, 52, 0.91, 0.15, 11.8);
+    Fruit pear = Fruit("Pear", 100, 63, 0.38, 0.16, 15.1);
     // prints the information each object holds
     apple.to_string();
     banana.to_string();
     kiwi.to_string();
+    orange.to_string();
+    pear.to_string();
 
     cout << "Thank you!" << endl;
 

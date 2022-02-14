@@ -6,6 +6,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <vector>
 using namespace std;
 
 class Fruit {
@@ -144,6 +145,11 @@ public:
         return carbs_unit;
     }
     // ========== carbs ==========
+
+    // Display the highest to lowest values of the attributes
+    void high_to_low() {
+        
+    }
 
 private:
     // variables that will be the different attributes for the Fruit object
