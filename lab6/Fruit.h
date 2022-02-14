@@ -12,11 +12,17 @@ class Fruit {
 
 public:
     Fruit(std::string name, int portion, int energy, float protein, float lipids, float carbs) {
+        // sets the fruit name attribute
         set_fruit_name(name);
+        // sets the portion size attribute
         set_portion_quantity(portion);
+        // sets the energy attribute
         set_energy_quantity(energy);
+        // sets the protein attribute
         set_protein_quantity(protein);
+        // sets the lipids attribute
         set_lipids_quantity(lipids);
+        // sets the carbs attribute
         set_carbs_quantity(carbs);
     }
 
@@ -33,16 +39,16 @@ public:
     // calls the needed get methods to print out everything about a fruit
     void to_string() {
         cout << "\tFruit name: " << get_fruit_name() << endl;
-        cout << "\t\t" << get_portion_label() << endl;
-        cout << "\t\t" << get_portion_quantity() << "  " << get_portion_unit() << endl;
-        cout << "\t\t" << get_energy_label() << endl;
-        cout << "\t\t" << get_energy_quantity() << "  " <<  get_energy_unit() <<  endl;
-        cout << "\t\t" << get_protein_label() << endl;
-        cout << "\t\t" << get_protein_quantity() << "  " <<  get_protein_unit() <<  endl;
-        cout << "\t\t" << get_lipids_label() << endl;
-        cout << "\t\t" << get_lipids_quantity() << "  " <<  get_lipids_unit() <<  endl;
-        cout << "\t\t" << get_carbs_label() << endl;
-        cout << "\t\t" << get_carbs_quantity() << "  " <<  get_carbs_unit() <<  endl << endl;
+        // print for portion size
+        cout << "\t\t" << get_portion_label() << ": " << get_portion_quantity() << "  " << get_portion_unit() << endl;
+        // print for energy (calories)
+        cout << "\t\t" << get_energy_label() << ": " << get_energy_quantity() << "  " <<  get_energy_unit() << endl;
+        // print for protein
+        cout << "\t\t" << get_protein_label() << ": " << get_protein_quantity() << "  " <<  get_protein_unit() <<  endl;
+        // print for lipids
+        cout << "\t\t" << get_lipids_label() << ": " << get_lipids_quantity() << "  " <<  get_lipids_unit() <<  endl;
+        // print for carbohydrates
+        cout << "\t\t" << get_carbs_label() << ": " << get_carbs_quantity() << "  " <<  get_carbs_unit() <<  endl << endl;
     }
 
     // ========== portions ==========
@@ -140,6 +146,7 @@ public:
     // ========== carbs ==========
 
 private:
+    // variables that will be the different attributes for the Fruit object
     string fruit_name;
 
     string portion_label = "Portion Size";

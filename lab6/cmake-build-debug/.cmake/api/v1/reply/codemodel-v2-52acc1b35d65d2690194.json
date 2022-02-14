@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lab6::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab6-Debug-dd8dd82f99cb01d06758.json",
+					"jsonFile" : "target-lab6-Debug-ca86b203dc6f863fd4e5.json",
 					"name" : "lab6",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab6/cmake-build-debug",
-		"source" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab6"
+		"build" : "C:/Users/lunke/OneDrive/Documents/Github/OOP/lab6/cmake-build-debug",
+		"source" : "C:/Users/lunke/OneDrive/Documents/Github/OOP/lab6"
 	},
 	"version" : 
 	{
