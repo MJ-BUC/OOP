@@ -4,6 +4,7 @@
 // Code Summary: This is a calculator that can do addition, subtraction, multiplication, division, and find the average.
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // int returning function that adds two numbers
@@ -22,12 +23,12 @@ int multiply(int num1, int num2) {
 }
 
 // int returning function that divides two numbers
-int divide(int num1, int num2) {
+double divide(double num1, double num2) {
     return num1 / num2;
 }
 
 // double returning function that takes the average of input numbers
-double average(int sum, int count) {
+double average(double sum, int count) {
     double avg = sum / count;
     return avg;
 }
@@ -39,7 +40,7 @@ int main() {
     string opChoice;
     int num1;
     int num2;
-    int sum;
+    double sum;
     int count = 0;
     string choice;
 
@@ -86,7 +87,7 @@ int main() {
     // if and if else that calls the corresponding function based on te option choice entered
     if (opChoice == "5") {
         double avg = average(sum, count);
-        cout << "\tThe average of numbers entered is " << avg << endl << endl;
+        cout << "\tThe average of numbers entered is " <<setprecision(2) << avg << endl << endl;
     }
     // error handling for someone who divides by zero
     else if (num2 == 0 && opChoice == "4") {
@@ -106,7 +107,7 @@ int main() {
     }
     else if (opChoice == "4") {
         sum = divide(num1, num2);
-        cout << "\t" << num1 <<  " / " << num2 <<  " = " << sum << endl << endl;
+        cout << "\t" << num1 <<  " / " << num2 <<  " = " << setprecision(4) << sum << endl << endl;
     }
     // error handling when an incorrect operation is selected
     else {
