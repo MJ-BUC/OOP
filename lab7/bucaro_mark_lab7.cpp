@@ -1,7 +1,8 @@
 // Mark Bucaro
 // CSCE 306 : Spring 2022
 // Lab7 - bucaro_mark_lab7.cpp
-// This source code file demonstrates Error Handling in a single page CPP application.
+// This source code file demonstrates reference variables, pointer variables, and  de-referencing...
+// ...in a single page CPP application.
 
 #include <iostream>
 #include <string>
@@ -10,6 +11,7 @@ using namespace std;
 
 
 int main() {
+    // variables
     int my_integer = 11;
     double my_double = 11.11;
     string ten_ten = "ten ten";
@@ -51,7 +53,7 @@ int main() {
 
     cout << "====================================================================" << endl << endl;
 
-
+    // reference variables
     int& my_int_ref{my_integer};
     double &my_dbl_ref{my_double};
     string & my_str_ref{ten_ten};
@@ -92,7 +94,7 @@ int main() {
 
     cout << "====================================================================" << endl << endl;
 
-
+    // pointer variables
     int* my_int_ptr = &my_integer;
     double *my_dbl_ptr = &my_double;
     string * my_str_ptr = &ten_ten;
@@ -102,34 +104,34 @@ int main() {
 
     // printing for my_integer
     cout << "\t --Data for de-reference variable my_int_ptr--" << endl;
-    cout << "\t\t Variable Value: " << my_int_ptr << endl;
-    cout << "\t\t de-referenced memory location: " << &my_int_ptr << endl << endl;
+    cout << "\t\t Variable Value: " << *my_int_ptr << endl;
+    cout << "\t\t de-referenced memory location: " << my_int_ptr << endl << endl;
 
     // printing for my_double
     cout << "\t --Data for de-reference variable my_dbl_ptr--" << endl;
-    cout << "\t\t Variable Value: " << my_dbl_ptr << endl;
-    cout << "\t\t de-referenced memory location: " << &my_dbl_ptr << endl << endl;
+    cout << "\t\t Variable Value: " << *my_dbl_ptr << endl;
+    cout << "\t\t de-referenced memory location: " << my_dbl_ptr << endl << endl;
 
     // printing for ten_ten
     cout << "\t --Data for de-reference variable my_str_ptr--" << endl;
-    cout << "\t\t Variable Value: " << my_str_ptr << endl;
-    cout << "\t\t de-referenced memory location: " << &my_str_ptr << endl << endl;
+    cout << "\t\t Variable Value: " << *my_str_ptr << endl;
+    cout << "\t\t de-referenced memory location: " << my_str_ptr << endl << endl;
 
     // printing for int_array_five
     cout << "\t --Data for de-reference variable my_array_ptr--" << endl;
-    cout << "\t\t Variable Value: ";
+    cout << "\t\t Array Values: ";
     for (int i = 0; i < 5; i++) {
         cout << my_array_ptr[i] << ", ";
     }
-    cout << "\n\t\t de-referenced memory location: " << &my_array_ptr << endl << endl;
+    cout << "\n\t\t de-referenced memory location: " << my_array_ptr << endl << endl;
 
     // printing for std_int_array
     cout << "\t --Data for de-reference variable std_array_ptr--" << endl;
-    cout << "\t\t Variable Value: ";
+    cout << "\t\t Array Values: ";
     for (int i = 0; i < 5; i++) {
         cout << std_array_ptr[i] << ", ";
     }
-    cout << "\n\t\t de-referenced memory location: " << &std_array_ptr << endl << endl;
+    cout << "\n\t\t de-referenced memory location: " << std_array_ptr << endl << endl;
 
 
     cout << "Thank you." << endl;
