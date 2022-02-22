@@ -8,8 +8,24 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <algorithm>
 using namespace std;
 
+bool CompCal(Fruit aa, Fruit bb) {
+    return aa.get_energy_quantity() > bb.get_energy_quantity();
+}
+
+bool CompProtein(Fruit aa, Fruit bb) {
+    return aa.get_protein_quantity() > bb.get_protein_quantity();
+}
+
+bool CompLipids(Fruit aa, Fruit bb) {
+    return aa.get_lipids_quantity() > bb.get_lipids_quantity();
+}
+
+bool CompCarbs(Fruit aa, Fruit bb) {
+    return aa.get_carbs_quantity() > bb.get_carbs_quantity();
+}
 
 int main() {
     int highest_energy;
@@ -67,6 +83,34 @@ int main() {
     cout << "\tThe fruit with the highest protein count is " << high_protein << " at " << highest_protein << endl;
     cout << "\tThe fruit with the highest lipids count is " << high_lipids << " at " << highest_lipids << endl;
     cout << "\tThe fruit with the highest carbs count is " << high_carbs << " at " << highest_carbs << endl;
+
+    vector<Fruit> fr_vector_cal (fruit_basket, fruit_basket+6);
+    sort(fr_vector_cal.begin(), fr_vector_cal.end(),CompCal);
+    cout << "\n\tList of fruits by calorie (highest to lowest)" << endl;
+    for (auto i = begin(fr_vector_cal); i != end(fr_vector_cal); ++i) {
+        cout << "\t\t" << i->get_fruit_name() << " has " << i->get_energy_quantity() << " calories" << endl;
+    }
+
+    vector<Fruit> fr_vector_protein (fruit_basket, fruit_basket+6);
+    sort(fr_vector_protein.begin(), fr_vector_protein.end(), CompProtein);
+    cout << "\n\tList of fruits by protein (highest to lowest)" << endl;
+    for (auto i = begin(fr_vector_protein); i != end(fr_vector_protein); ++i) {
+        cout << "\t\t" << i->get_fruit_name() << " has " << i->get_protein_quantity() << " grams" << endl;
+    }
+
+    vector<Fruit> fr_vector_lipids (fruit_basket, fruit_basket+6);
+    sort(fr_vector_lipids.begin(), fr_vector_lipids.end(),CompLipids);
+    cout << "\n\tList of fruits by lipids (highest to lowest)" << endl;
+    for (auto i = begin(fr_vector_lipids); i != end(fr_vector_lipids); ++i) {
+        cout << "\t\t" << i->get_fruit_name() << " has " << i->get_lipids_quantity() << " grams" << endl;
+    }
+
+    vector<Fruit> fr_vector_carbs (fruit_basket, fruit_basket+6);
+    sort(fr_vector_carbs.begin(), fr_vector_carbs.end(),CompCarbs);
+    cout << "\n\tList of fruits by carbs (highest to lowest)" << endl;
+    for (auto i = begin(fr_vector_carbs); i != end(fr_vector_carbs); ++i) {
+        cout << "\t\t" << i->get_fruit_name() << " has " << i->get_carbs_quantity() << " grams" << endl;
+    }
 
 
     cout << "\nThank you!" << endl;
