@@ -37,7 +37,7 @@ int main() {
     string high_lipids;
     string high_carbs;
 
-    cout << "Welcome to lab 5!" << endl << endl;
+    cout << "Welcome to lab 6!" << endl << endl;
 
     // instantiates 3 Fruit objects an apple, banana, and kiwi
     Fruit apple = Fruit("Apple", 100, 62, 0.19, 0.21, 14.8);
@@ -111,7 +111,6 @@ int main() {
     for (auto i = begin(fr_vector_carbs); i != end(fr_vector_carbs); ++i) {
         cout << "\t\t" << i->get_fruit_name() << " has " << i->get_carbs_quantity() << " grams" << endl;
     }
-
 
     cout << "\nThank you!" << endl;
 
