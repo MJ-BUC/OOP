@@ -174,10 +174,4 @@ private:
     string carbs_label = "Carbohydrates (All)";
     float carbs_quantity = 0.0;
     string carbs_unit = "Grams";
-
-    vector<int> portion_vec;
-    vector<int> energy_vec;
-    vector<float> protein_vec;
-    vector<float> lipids_vec;
-    vector<float> carbs_vec;
 };
