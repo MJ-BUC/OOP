@@ -129,7 +129,7 @@ int main() {
         cout << "\t\tValue at index " << i << " is " << std_array_ptr[i] << " with memory location at " << &std_array_ptr[i] << endl;
     }
 
-    cout << "Thank you." << endl;
+    cout << "\nThank you." << endl;
 
     return 0;
 }
