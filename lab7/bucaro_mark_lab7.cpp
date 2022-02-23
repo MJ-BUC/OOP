@@ -119,20 +119,15 @@ int main() {
 
     // printing for int_array_five
     cout << "\t --Data for de-reference variable my_array_ptr--" << endl;
-    cout << "\t\t Array Values: ";
     for (int i = 0; i < 5; i++) {
-        cout << my_array_ptr[i] << ", ";
+        cout << "\t\tValue at index " << i << " is " << my_array_ptr[i] << " with memory location at " << &my_array_ptr[i] << endl;
     }
-    cout << "\n\t\t de-referenced memory location: " << my_array_ptr << endl << endl;
 
     // printing for std_int_array
-    cout << "\t --Data for de-reference variable std_array_ptr--" << endl;
-    cout << "\t\t Array Values: ";
+    cout << "\n\t --Data for de-reference variable std_array_ptr--" << endl;
     for (int i = 0; i < 5; i++) {
-        cout << std_array_ptr[i] << ", ";
+        cout << "\t\tValue at index " << i << " is " << std_array_ptr[i] << " with memory location at " << &std_array_ptr[i] << endl;
     }
-    cout << "\n\t\t de-referenced memory location: " << std_array_ptr << endl << endl;
-
 
     cout << "Thank you." << endl;
 
