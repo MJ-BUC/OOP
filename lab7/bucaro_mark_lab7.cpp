@@ -37,21 +37,17 @@ int main() {
 
     // printing for int_array_five
     cout << "\t --Data for variable int_array_fiver--" << endl;
-    cout << "\t\t Variable Value: ";
     for (int i = 0; i < 5; i++) {
-        cout << int_array_five[i] << ", ";
+        cout << "\t\tValue at index " << i << " is " << int_array_five[i] << " with memory location at " << &int_array_five[i] << endl;
     }
-    cout << "\n\t\t Memory reference location: " << &int_array_five << endl << endl;
 
     // printing for std_int_array
-    cout << "\t --Data for variable std_int_array--" << endl;
-    cout << "\t\t Variable Value: ";
+    cout << "\n\t --Data for variable std_int_array--" << endl;
     for (int i = 0; i < std_int_array.size(); i++) {
-        cout << std_int_array[i] << ", ";
+        cout << "\t\tValue at index " << i << " is " << std_int_array[i] << " with memory location at " << &std_int_array[i] << endl;
     }
-    cout << "\n\t\t Memory reference location: " << &std_int_array << endl << endl;
 
-    cout << "====================================================================" << endl << endl;
+    cout << "\n====================================================================" << endl << endl;
 
     // reference variables
     int& my_int_ref{my_integer};
@@ -78,21 +74,17 @@ int main() {
 
     // printing for int_array_five
     cout << "\t --Data for reference variable my_array_ref--" << endl;
-    cout << "\t\t Variable Value: ";
     for (int i = 0; i < 5; i++) {
-        cout << my_array_ref[i] << ", ";
+        cout << "\t\tValue at index " << i << " is " << my_array_ref[i] << " with memory location at " << &my_array_ref[i] << endl;
     }
-    cout << "\n\t\t Memory reference location: " << &my_array_ref << endl << endl;
 
     // printing for std_int_array
-    cout << "\t --Data for reference variable std_array_ref--" << endl;
-    cout << "\t\t Variable Value: ";
+    cout << "\n\t --Data for reference variable std_array_ref--" << endl;
     for (int i = 0; i < std_array_ref.size(); i++) {
-        cout << std_array_ref[i] << ", ";
+        cout << "\t\tValue at index " << i << " is " << std_array_ref[i] << " with memory location at " << &std_array_ref[i] << endl;
     }
-    cout << "\n\t\t Memory reference location: " << &std_array_ref << endl << endl;
 
-    cout << "====================================================================" << endl << endl;
+    cout << "\n====================================================================" << endl << endl;
 
     // pointer variables
     int* my_int_ptr = &my_integer;
