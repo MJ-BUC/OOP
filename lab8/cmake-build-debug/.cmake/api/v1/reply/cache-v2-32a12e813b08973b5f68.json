@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab8/cmake-build-debug"
+			"value" : "c:/Users/lunke/OneDrive/Documents/Github/OOP/lab8/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab8"
+			"value" : "C:/Users/lunke/OneDrive/Documents/Github/OOP/lab8"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab8/cmake-build-debug"
+			"value" : "C:/Users/lunke/OneDrive/Documents/Github/OOP/lab8/cmake-build-debug"
 		},
 		{
 			"name" : "lab8_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lunke/OneDrive/Documents/Github/CSCE306/lab8"
+			"value" : "C:/Users/lunke/OneDrive/Documents/Github/OOP/lab8"
 		}
 	],
 	"kind" : "cache",
