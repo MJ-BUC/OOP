@@ -4,35 +4,36 @@
 // Person will be the base class
 // file: Person.cpp
 
+#include <iostream>
+#include <String>
 #include "Person.h"
-#include "String"
 using namespace std;
 
 Person::Person(){}
 
 Person::Person(std::string a_fname, int an_age, std::string a_lname)
-        : firstname{a_fname}, personage{an_age}, lastname{a_lname} {}
+        : fname{a_fname}, age{an_age}, lname{a_lname} {}
 
-string Person::get_first(){
-    return firstname;
+string Person::get_fname(){
+    return fname;
 }
 
 int Person::get_age(){
-    return personage;
+    return age;
 }
 
-string Person::get_last(){
-    return lastname;
+string Person::get_lname(){
+    return lname;
 }
 
-void Person::set_first(int age){
-    this->firstname = age;
+void Person::set_age(int personage){
+    this->age = personage;
 }
 
-void Person::set_age(std::string fname){
-    this->personage = fname;
+void Person::set_fname(std::string firstname){
+    this->fname = firstname;
 }
 
-void Person::set_last(std::string lname){
-    this->lastname = lname;
+void Person::set_lname(std::string lastname){
+    this->lname = lastname;
 }

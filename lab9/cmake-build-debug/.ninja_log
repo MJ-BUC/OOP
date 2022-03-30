@@ -1,3 +1,12 @@
 # ninja log v5
 1	230	6703523535017392	CMakeFiles/lab9.dir/bucaro_mark_lab9.cpp.obj	8bff39bef1b9c665
 231	310	6703523535799733	lab9.exe	6b9f66c659efc959
+13	397	6703621724818560	CMakeFiles/lab9.dir/Person.cpp.obj	e5296e5dd89fb1b1
+3	407	6703621724975521	CMakeFiles/lab9.dir/bucaro_mark_lab9.cpp.obj	8bff39bef1b9c665
+407	557	6703621726379150	lab9.exe	609dbbab9acc9baf
+3	325	6703621983158322	CMakeFiles/lab9.dir/bucaro_mark_lab9.cpp.obj	8bff39bef1b9c665
+325	440	6703621984253723	lab9.exe	609dbbab9acc9baf
+2	333	6703624752090205	CMakeFiles/lab9.dir/bucaro_mark_lab9.cpp.obj	8bff39bef1b9c665
+333	459	6703624753342250	lab9.exe	609dbbab9acc9baf
+2	358	6703625138139026	CMakeFiles/lab9.dir/bucaro_mark_lab9.cpp.obj	8bff39bef1b9c665
+358	472	6703625139233424	lab9.exe	609dbbab9acc9baf

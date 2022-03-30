@@ -4,8 +4,8 @@
 // Person will be the base class
 // file: Person.h
 
-#include "istream"
-#include "String"
+#include <istream>
+#include <String>
 using namespace std;
 
 #ifndef LAB9_PERSON_H
