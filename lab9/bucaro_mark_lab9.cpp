@@ -1,7 +1,7 @@
 // Mark Bucaro
 // CSCE 306 : Spring 2022
 // Lab9 - bucaro_mark_lab9.cpp
-//  This source code file demonstrates Object Instantiation in a single page CPP application.
+// This source code file demonstrates Object Instantiation in a single page CPP application.
 
 #include <iostream>
 #include "Person.h"
@@ -19,11 +19,15 @@ int main() {
     Person person5("Richard", 54, "Johnson");
     Person person6("Tim", 33, "Richards");
 
+    cout << "Welcome to lab 9" << endl << endl;
+
     printingHelper(person1);
     printingHelper(person2);
     printingHelper(person3);
     printingHelper(person4);
     printingHelper(person5);
     printingHelper(person6);
+
+    cout << "\nThank you." << endl;
     return 0;
 }

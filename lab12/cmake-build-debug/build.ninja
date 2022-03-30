@@ -55,6 +55,18 @@ build CMakeFiles/lab12.dir/bucaro_mark_lab12.cpp.obj: CXX_COMPILER__lab12_Debug 
   OBJECT_DIR = CMakeFiles\lab12.dir
   OBJECT_FILE_DIR = CMakeFiles\lab12.dir
 
+build CMakeFiles/lab12.dir/Person.cpp.obj: CXX_COMPILER__lab12_Debug C$:/Users/lunke/OneDrive/Documents/Github/OOP/lab12/Person.cpp || cmake_object_order_depends_target_lab12
+  DEP_FILE = CMakeFiles\lab12.dir\Person.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\lab12.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab12.dir
+
+build CMakeFiles/lab12.dir/Student.cpp.obj: CXX_COMPILER__lab12_Debug C$:/Users/lunke/OneDrive/Documents/Github/OOP/lab12/Student.cpp || cmake_object_order_depends_target_lab12
+  DEP_FILE = CMakeFiles\lab12.dir\Student.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\lab12.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab12.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lab12
@@ -63,7 +75,7 @@ build CMakeFiles/lab12.dir/bucaro_mark_lab12.cpp.obj: CXX_COMPILER__lab12_Debug 
 #############################################
 # Link the executable lab12.exe
 
-build lab12.exe: CXX_EXECUTABLE_LINKER__lab12_Debug CMakeFiles/lab12.dir/bucaro_mark_lab12.cpp.obj
+build lab12.exe: CXX_EXECUTABLE_LINKER__lab12_Debug CMakeFiles/lab12.dir/bucaro_mark_lab12.cpp.obj CMakeFiles/lab12.dir/Person.cpp.obj CMakeFiles/lab12.dir/Student.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab12.dir
