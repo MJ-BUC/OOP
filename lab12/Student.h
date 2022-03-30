@@ -23,15 +23,15 @@ public:
     std::string get_major(); // gets the student's major
     int get_id(); // gets the student's id
     float get_gpa(); // gets the student's gpa
-    string get_student_fname();
-    int get_student_age();
-    string get_student_lname();
+    string get_student_fname(); // gets the first name
+    int get_student_age(); // gets the age
+    string get_student_lname(); // gets the last name
 
 private:
     std::string major; // Student's major
     int id; // Student's id number
     float gpa; // Student's gpa
-    Person isPerson;
+    Person isPerson; // person obj
 };
 
 

@@ -13,27 +13,32 @@ using namespace std;
 Student::Student(std::string studmajor, int idnum, float gradepoint, std::string a_fname, int an_age, std::string a_lname)
         : major{studmajor}, id{idnum}, gpa{gradepoint}, isPerson(a_fname, an_age, a_lname){}
 
-
+// gets the student major
 std::string Student::get_major() {
     return this->major;
-}    // i.e., collie, husky, dane, golden
+}
 
+// gets the student id
 int Student::get_id(){
     return this->id;
-}; // in pounds
+}
 
+// gets the student gpa
 float Student::get_gpa(){
     return this->gpa;
-}; // in inches
+}
 
+// gets the student first name
 std::string Student::get_student_fname() {
     return this->isPerson.get_fname();
 }
 
+// gets the student age
 int Student::get_student_age() {
     return this->isPerson.get_age();
 }
 
+// gets the student last name
 std::string Student::get_student_lname() {
     return this->isPerson.get_lname();
 }
