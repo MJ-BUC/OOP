@@ -1,0 +1,8 @@
+# ninja log v5
+0	268	6709530197057279	CMakeFiles/smallproject2.dir/bucaro_mark_sp2.cpp.obj	186fe25c20b12df6
+275	388	6709530198157941	smallproject2.exe	4dbf8f2066d521e0
+1	160	6709532621548850	build.ninja	42d39fa1efc6ada5
+7	68	6709532622803816	CMakeFiles/smallproject2.dir/Friend.cpp.obj	fde24afdddd1bc7
+5	260	6709532624733527	CMakeFiles/smallproject2.dir/bucaro_mark_sp2.cpp.obj	186fe25c20b12df6
+2	293	6709532624937883	CMakeFiles/smallproject2.dir/Person.cpp.obj	42007d91886719f8
+294	383	6709532625821486	smallproject2.exe	5d4586be129ff59e
