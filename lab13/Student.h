@@ -5,8 +5,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-using namespace std;
 #include "Person.h"
+using namespace std;
 
 #ifndef PERSON_STUDENT_H
 #define PERSON_STUDENT_H
