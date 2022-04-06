@@ -51,7 +51,7 @@ int main(){
     std::sort(Student_Body.begin(), Student_Body.end(), lambdaSort);
     cout << "\n\tStudents by Last Name, First Name: " << endl;
     for (Student s : Student_Body)
-        cout << "\t" << s.get_student_p_name() << s.get_preferred_name() << endl;
+        cout << "\t\t" << s.get_student_p_name() << s.get_preferred_name() << endl;
 
     cout << "\n";
 
@@ -91,9 +91,9 @@ int main(){
 
     // Find the most pursued degree
     if ( (ug_count > gr_count) and (ug_count > pg_count) and (ug_count > dr_count) ){
-        cout << "\n\tThe most popular degree program is Undergraduate Studies";
+        cout << "\n\tThe most popular degree program is Undergraduate Studies" << endl;
     } else if ( (gr_count > ug_count) and (gr_count > pg_count) and (gr_count > dr_count) ){
-        cout << "\n\tThe most popular degree program is Graduate Studies";
+        cout << "\n\tThe most popular degree program is Graduate Studies" << endl;
     } else if ( (pg_count > ug_count) and (pg_count > gr_count) and (pg_count > dr_count) ){
         cout << "\n\tThe most popular degree program is Post-Graduate Studies" << endl;
     }
@@ -102,36 +102,20 @@ int main(){
     std::sort(DR.begin(), DR.end(), lambdaSortGPA);
     cout << "\n\tDoctoral Students by GPA (Highest to Lowest): " << endl;
     for (Student s : DR)
-        cout << "\t" << s.get_student_p_name() << " GPA : " << s.get_grade_point_average() << endl;
+        cout << "\t\t" << s.get_student_p_name() << " GPA : " << s.get_grade_point_average() << endl;
     std::sort(PG.begin(), PG.end(), lambdaSortGPA);
     cout << "\n\tPost-Graduate Students by GPA (Highest to Lowest): " << endl;
     for (Student s : PG)
-        cout << "\t" << s.get_student_p_name() << " GPA : " << s.get_grade_point_average() << endl;
+        cout << "\t\t" << s.get_student_p_name() << " GPA : " << s.get_grade_point_average() << endl;
     std::sort(GR.begin(), GR.end(), lambdaSortGPA);
     cout << "\n\tGraduate Students by GPA (Highest to Lowest): " << endl;
     for (Student s : GR)
-        cout << "\t" << s.get_student_p_name() << " GPA : " << s.get_grade_point_average() << endl;
+        cout << "\t\t" << s.get_student_p_name() << " GPA : " << s.get_grade_point_average() << endl;
     std::sort(UG.begin(), UG.end(), lambdaSortGPA);
     cout << "\n\tPost-Graduate Students by GPA (Highest to Lowest): " << endl;
     for (Student s : UG)
-        cout << "\t" << s.get_student_p_name() << " GPA : " << s.get_grade_point_average() << endl;
-
-    cout <<"\n";
-
-    // Create vectors of students for each city
-    vector<std::string> city_names;
-    vector<Student> student_cities;
-    std::string this_city;
-    std::string v_this_city;
-    for (Student each : Student_Body) {
-        this_city = each.get_student_p_location(); // name of the city
-        v_this_city = "v_" + this_city; // vector name for the city
-        if (std::find(city_names.begin(), city_names.end(), this_city) == city_names.end()) {
-            // Add the city name to the vector list
-            cout << "\t" << this_city << endl;
-            city_names.push_back(this_city);
-        }
-    }
+        cout << "\t\t" << s.get_student_p_name() << " GPA : " << s.get_grade_point_average() << endl;
+    
 
     cout << "\nThank you." << endl;
 
