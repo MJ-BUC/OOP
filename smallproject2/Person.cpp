@@ -11,17 +11,15 @@ using namespace std;
 
 Person::Person(){}
 
-Person::Person(std::string a_fname, int an_age, std::string a_lname)
-        : fname{a_fname}, age{an_age}, lname{a_lname} {}
+Person::Person(std::string a_fname, std::string a_lname)
+        : fname{a_fname}, lname{a_lname} {}
+
+Person::Person(std::string a_fname, std::string a_lname, std::string a_movie, std::string a_music, std::string a_game)
+        : fname{a_fname}, lname{a_lname}, movie{a_movie}, music{a_music}, game{a_game} {}
 
 // get the first name
 string Person::get_fname(){
     return fname;
-}
-
-// get the age
-int Person::get_age(){
-    return age;
 }
 
 // get the last name
@@ -29,9 +27,16 @@ string Person::get_lname(){
     return lname;
 }
 
-// set the age
-void Person::set_age(int personage){
-    this->age = personage;
+string Person::get_movie(){
+    return movie;
+}
+
+string Person::get_music(){
+    return music;
+}
+
+string Person::get_game(){
+    return game;
 }
 
 //set the first name
@@ -42,4 +47,16 @@ void Person::set_fname(std::string firstname){
 // set the last name
 void Person::set_lname(std::string lastname){
     this->lname = lastname;
+}
+
+void Person::set_movie(std::string favmovie){
+    this->lname = favmovie;
+}
+
+void Person::set_music(std::string favmusic){
+    this->lname = favmusic;
+}
+
+void Person::set_game(std::string favgame){
+    this->lname = favgame;
 }

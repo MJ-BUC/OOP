@@ -14,20 +14,28 @@ using namespace std;
 class Person {
     public:
         Person();
-        Person(std::string, int, std::string);
-        string get_fname();
-        int get_age();
-        string get_lname();
+        Person(std::string, std::string);
+        Person(std::string, std::string, std::string, std::string, std::string);
 
-        void set_age(int);
+        string get_fname();
+        string get_lname();
+        string get_movie();
+        string get_music();
+        string get_game();
+
         void set_fname(std::string);
         void set_lname(std::string);
+        void set_movie(std::string);
+        void set_music(std::string);
+        void set_game(std::string);
 
         std::string fname; // first name of person
-    protected:
-        int age; // age of the person
-    private:
         std::string lname; // last name of person
+        std::string movie_genre[3] = {};
+    private:
+        std::string movie;
+        std::string music;
+        std::string game;
 };
 
 
