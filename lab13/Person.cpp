@@ -7,20 +7,20 @@
 #include "Person.h"
 using namespace std;
 
-// Empty Constructor
+// Empty constructor
 Person::Person(){}
 
-// Create Person on only Birth Year
+// Create person with just birth year
 Person::Person(int b_year)
         : p_birth_year{b_year}
 {}
 
-// Create Person on Birth Year and Location
+// Create person with birth year and location
 Person::Person(int b_year,std::string loc)
         : p_birth_year{b_year}, p_location{loc}
 {}
 
-// Create Person on Birth Year, Location, and Person Name
+// Create person with birth year, location, and name
 Person::Person(int b_year,std::string loc,std::string name)
         : p_birth_year{b_year}, p_location{loc}, p_name{name}
 {}
@@ -47,7 +47,7 @@ std::string Person::get_person_name(){
     return this->p_name;
 }
 
-// Print out the Person data
+// Print out person data
 void Person::report_person_data(){
     cout << "Person Name: " << get_person_name() << endl;
     cout << "Born on Date: " << get_person_year() << endl;

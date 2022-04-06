@@ -7,8 +7,7 @@
 #include "Student.h"
 using namespace std;
 
-// Student Constructor Given No Data or Person Object
-// This constructor must prompt for student fields as well as check Person Object data
+// Student constructor given no student data / person object
 Student::Student()
 {
     set_preferred_name(establish_student_name());
@@ -18,9 +17,7 @@ Student::Student()
     Student_Person = Person(establish_year(),establish_loc(),establish_name());
 }
 
-// Student Constructor Given A Person Object (which may or many not have a date,location,name)
-// This constructor must prompt for student fields as well as check the Person Object for data
-// Student::Student(Person){}
+// Student constructor given a person object
 Student::Student(Person a_person)
         : Student_Person(a_person.get_person_year(),a_person.get_person_location(),a_person.get_person_name())
 {
@@ -30,8 +27,7 @@ Student::Student(Person a_person)
     set_degree_pursued(establish_student_degee_pursuit());
 }
 
-// Student Constructor Given no Student Data, and data for a Person Object (but no person object)
-// This constructor must prompt for student fields -test
+// Student constructor gives no student data / data for person object
 Student::Student(int the_year, std::string the_location, std::string the_name)
         : Student_Person(the_year,the_location,the_name)
 {
@@ -41,8 +37,7 @@ Student::Student(int the_year, std::string the_location, std::string the_name)
     set_degree_pursued(establish_student_degee_pursuit());
 }
 
-// Student Constructor Given data for a Student Object, but no data for Person or Person object
-// Student(std::string, int, float, std::string);
+// Student constructor given data for student object / no data for person or person object
 Student::Student(std::string as_name, int as_id, float as_gpa, std::string as_degree)
         :  preferred_name{as_name}, student_id{as_id},
            grade_point_average{as_gpa}, degree_pursued{as_degree}
@@ -50,16 +45,14 @@ Student::Student(std::string as_name, int as_id, float as_gpa, std::string as_de
     Student_Person = Person(establish_year(),establish_loc(),establish_name());
 }
 
-// Student Constructor Given data for a Student Object, and Person data, but no Person Object
-// Student::Student(std::string, int, float, std::string, int, std::string, std::string){}
+// Student constructor given data for student object / person data / no person object
 Student::Student(std::string a_name, int an_id, float start_gpa, std::string the_degree, int this_date, std::string this_loc, std::string this_name)
         :  preferred_name{a_name}, student_id{an_id},
            grade_point_average{start_gpa}, degree_pursued{the_degree},
            Student_Person(this_date,this_loc,this_name)
 {}
 
-// Student Constructor Given data for a Student Object, and a Person object
-// Student::Student(std::string, int, float, std::string, Person) {}
+// Student constructor given data for student object / person object
 Student::Student(std::string a_name, int an_id, float start_gpa, std::string the_degree, Person aPerson)
         : preferred_name{a_name}, student_id{an_id},
           grade_point_average{start_gpa}, degree_pursued{the_degree},
@@ -94,7 +87,6 @@ int Student::get_student_p_year(){
     return Student_Person.get_person_year();
 };
 
-// test this report
 void Student::get_student_person_data(){
     Student_Person.report_person_data();
 }

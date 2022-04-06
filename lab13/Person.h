@@ -16,7 +16,7 @@ public:
     Person(int,std::string);
     Person(int,std::string,std::string);
 
-    // Print out the Person data
+    // Print out person data
     void report_person_data();
 
     int get_person_year();
