@@ -2,8 +2,8 @@
 // CSCE 306 : Spring 2022
 // Lab13 - Person.h
 
-#include <string>
 #include <iostream>
+#include <string>
 using namespace std;
 
 #ifndef PERSON_PERSON_H

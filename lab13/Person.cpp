@@ -2,9 +2,9 @@
 // CSCE 306 : Spring 2022
 // Lab13 - Person.cpp
 
-#include "Person.h"
-#include <string>
 #include <iostream>
+#include <string>
+#include "Person.h"
 using namespace std;
 
 // Empty Constructor

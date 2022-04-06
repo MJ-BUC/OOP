@@ -2,8 +2,8 @@
 // CSCE 306 : Spring 2022
 // Lab13 - Student.cpp
 
-#include <string>
 #include <iostream>
+#include <string>
 #include "Student.h"
 using namespace std;
 
