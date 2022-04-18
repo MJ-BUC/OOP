@@ -1,0 +1,7 @@
+# ninja log v5
+0	282	6715616583040057	CMakeFiles/lab14.dir/bucaro_mark_lab14.cpp.obj	58c08da37d2ec0fa
+285	438	6715616584547201	lab14.exe	56898ad233ae0861
+5	379	6720231202296843	CMakeFiles/lab14.dir/Person.cpp.obj	65e7128d19912b16
+7	380	6720231202317101	CMakeFiles/lab14.dir/Student.cpp.obj	aca0155de86db788
+2	508	6720231203585146	CMakeFiles/lab14.dir/bucaro_mark_lab14.cpp.obj	58c08da37d2ec0fa
+508	678	6720231205263878	lab14.exe	b675e3f6093144dc
